@@ -18,7 +18,6 @@ Sistem backend berbasis Python (FastAPI) untuk memantau volume dan jenis sampah 
 * **Role-Based Access Control:**
 
   * **Admin:** Akses penuh (CRUD Data User, Lokasi, Kategori).
-  * **Data Analyst:** Akses khusus ke modul Analisis Data dan Laporan.
 
 ### 3. Analisis Data Cerdas (Data Analytics)
 
@@ -91,8 +90,7 @@ python seed.py
 
 **Default User:**
 
-* **Admin:** `admin` / `admin123`
-* **Analyst:** `analyst` / `analyst123`
+* **Admin:** `admin` / `admin`
 
 ### 5. Jalankan Server
 
@@ -116,10 +114,10 @@ FastAPI menyediakan dokumentasi interaktif secara otomatis. Setelah server berja
 | Method | Endpoint                   | Deskripsi                              | Role          |
 | ------ | -------------------------- | -------------------------------------- | ------------- |
 | `POST` | `/auth/token`              | Login untuk mendapatkan Access Token   | All           |
-| `GET`  | `/analysis/summary`        | Ringkasan dashboard (KPI)              | Admin/Analyst |
-| `GET`  | `/analysis/trend/daily`    | Tren volume sampah harian              | Admin/Analyst |
-| `GET`  | `/analysis/prediction`     | Prediksi volume 7 hari ke depan        | Admin/Analyst |
-| `GET`  | `/analysis/route/optimize` | Rekomendasi rute pengumpulan terpendek | Admin/Analyst |
+| `GET`  | `/analysis/summary`        | Ringkasan dashboard (KPI)              | Admin         |
+| `GET`  | `/analysis/trend/daily`    | Tren volume sampah harian              | Admin         |
+| `GET`  | `/analysis/prediction`     | Prediksi volume 7 hari ke depan        | Admin         |
+| `GET`  | `/analysis/route/optimize` | Rekomendasi rute pengumpulan terpendek | Admin         |
 | `GET`  | `/collections/`            | Melihat riwayat pengumpulan sampah     | Admin         |
 
 ---
