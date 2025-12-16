@@ -147,5 +147,3 @@ waste-management-api/
 ```
 
 ---
-
-**Developed for Final Exam - Kapita Selekta Analitika Data**
